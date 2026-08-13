@@ -30,8 +30,6 @@ Scrimba's Clean code course by Dylan Isreal
 
 ### Magic numbers
 
-Can be improved:
-
 ```js
 // Clean Code Variables: Challenge 2 - Magic Numbers
 const time = 86400000; // What is this?
