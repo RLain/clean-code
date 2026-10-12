@@ -161,4 +161,13 @@ function isUserLoadingSuccesfully(state) {
     state.user === null && state.loading === true && state.hasError === false
   );
 }
+
+// Gemini's approach
+function getLoadingState(state) {
+  if (state?.hasError) return "Error occured";
+  if (state?.loading) return "Loading...";
+  if (state?.user) return "Finished Loading";
+
+  return "Idle"; // Clear fallback for initial/unloaded state
+}
 ```
